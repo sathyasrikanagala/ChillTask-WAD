@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+
+body {
+  background-color: #FFB6C1; /* Vibrant pastel pink background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.plate {
+  display: flex;               /* Enable Flexbox */
+  flex-direction: column;      /* Stack items vertically */
+  justify-content: center;     /* Center items vertically */
+  align-items: center;         /* Center items horizontally */
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.shadow {
+  color: #222; /* Darker text color for better contrast */
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 #FFFFFF,  /* Light shadow to make text pop */
+    3px -3px 0 #FFFFFF,
+    -3px 3px 0 #FFFFFF,
+    3px 3px 0 #FFFFFF,
+    4px 4px 0 #FFFFFF,
+    5px 5px 0 #FFFFFF,
+    6px 6px 0 #FFFFFF,
+    7px 7px 0 #FFFFFF;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  font-size: 100px; /* Increased size for ChillTask */
+  margin: 0; /* Remove margin */
+}
+
+.text-chilltask {
+  /* Removed as it's merged with .shadow */
+}
+
+.script {
+  font-family: "Seaweed Script";
+  color: #222; /* Darker script text for better visibility */
+  font-size: 40px;
+  position: relative;
+  margin: 20px 0; /* Margin to separate from lines */
+}
+
+.script span {
+  background-color: #FFB6C1; /* Vibrant pastel pink */
+  padding: 0 0.3em;
+}
+
+/* Lines before and after the text */
+.script:before,
+.script:after {
+  content: "";
+  display: block;
+  height: 3px; /* Thickness of the lines */
+  background-color: #FFFFFF; /* Color of the lines */
+  width: 100%; /* Full width */
+  margin: 10px 0; /* Margin for spacing */
+}
+
+.script:before {
+  margin-bottom: 10px; /* Space before the text */
+}
+
+.script:after {
+  margin-top: 10px; /* Space after the text */
+}
+
+/* Button Styles */
+.button-56 {
+  align-items: center;
+  background-color: #fee6e3; /* Pastel background */
+  border: 2px solid #111; /* Dark border */
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111; /* Dark text for contrast */
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 30px; /* Margin to separate from text */
+}
+
+.button-56:after {
+  background-color: #111; /* Dark background behind button */
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: #ffdeda; /* Light pink when clicked */
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px; /* Adjust padding for larger screens */
+  }
+}

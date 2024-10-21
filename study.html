@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:/Users/KSath/OneDrive/Desktop/WAD project/study/study.css"> <!-- Relative Path to CSS -->
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <style>
+        @font-face {
+            font-family: 'Seaweed Script';
+            src: url('C:/path/to/SeaweedScript.ttf') format('truetype'); /* Update with your actual path */
+        }
+
+        .seaweed-script {
+            font-family: 'Seaweed Script', cursive; /* Fallback to cursive */
+            font-size: 24px; /* Adjust font size as needed */
+            color: #3b3b3b; /* Adjust color as needed */
+            text-align: center; /* Center align the text */
+            margin: 10px 0; /* Margin for spacing */
+        }
+    </style>
+</head>
+<body>
+    <!-- ChillTask Redirect (Top-Left) -->
+    <div class="corner-text">
+        <a href="../mainpage/mainpage.html" style="text-decoration: none; color: inherit;"> <!-- Relative Path to main page -->
+            ChillTask
+        </a>
+    </div>
+
+    <!-- Home Icon (Top-Right) -->
+    <div class="corner-icon">
+        <a href="C:\Users\KSath\OneDrive\Desktop\WAD project\nextpage\nextpage.html" style="color: inherit;"> <!-- Relative Path to home page -->
+            <i class="fas fa-house"></i>
+        </a>
+    </div>
+
+    <!-- Pomodoro Timer Section -->
+    <div class="center-container">
+        <h1 class="shadow">🍅 Pomodoro Timer</h1>
+
+        <!-- Added text for user instruction -->
+        <h2 class="seaweed-script"><span>Select the timer before clicking start</span></h2>
+
+        <div class="button-container">
+            <button class="button-56" id="pomodoro-session">Pomodoro</button>
+            <button class="button-56" id="short-break">Short Break</button>
+            <button class="button-56" id="long-break">Long Break</button>
+        </div>
+
+        <div id="pomodoro-timer" class="timer-display" data-duration="25.00">25:00</div>
+        <div id="short-timer" class="timer-display" data-duration="5.00">5:00</div>
+        <div id="long-timer" class="timer-display" data-duration="10.00">10:00</div>
+
+        <!-- Start and Stop buttons side-by-side -->
+        <div id="buttons" class="horizontal-buttons">
+            <button class="button-56" id="start">START</button>
+            <button class="button-56" id="stop">STOP</button>
+        </div>
+    </div>
+
+    <!-- JS file -->
+    <script src="C:\Users\KSath\OneDrive\Desktop\WAD project\study\study.js"></script> <!-- Relative Path to JS -->
+</body>
+</html>

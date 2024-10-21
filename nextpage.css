@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo:700');
+
+body {
+    background-color: #FFB6C1; /* Vibrant pastel pink background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.center-container {
+    text-align: center;
+}
+
+.shadow {
+    color: #222; /* Darker text color for better contrast */
+    font-family: 'Arvo', sans-serif; /* Font for header */
+    font-weight: bold;
+    font-size: 60px; /* Header size */
+    margin-bottom: 40px; /* Space between header and buttons */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the buttons */
+}
+
+/* Button Styles */
+.button-56 {
+    align-items: center;
+    background-color: #fee6e3; /* Pastel button background */
+    border: 2px solid #111; /* Dark border */
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111; /* Dark text for contrast */
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-56:after {
+    background-color: #111; /* Dark background behind button */
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.button-56:hover:after {
+    transform: translate(0, 0);
+}
+
+.button-56:active {
+    background-color: #ffdeda; /* Light pink when clicked */
+    outline: 0;
+}
+
+.button-56:hover {
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    .button-56 {
+        padding: 0 40px; /* Adjust padding for larger screens */
+    }
+}
+
+/* Styling for the top corners */
+.corner-text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: 'Arvo', sans-serif;
+    font-size: 30px;
+}
+
+.corner-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #111;
+}
